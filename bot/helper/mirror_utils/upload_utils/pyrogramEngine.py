@@ -114,7 +114,6 @@ class TgUploader:
                                     chat_id=x,
                                     video=self.__sent_msg.video.file_id,
                                     caption=cap_mono,
-                                    parse_mode="HTML",
                                     duration=duration,
                                     width=width,
                                     height=height,
