@@ -114,7 +114,7 @@ class TgUploader:
                                     chat_id=x,
                                     video=self.__sent_msg.video.file_id,
                                     caption=cap_mono,
-                                    parse_mode="html",
+                                    parse_mode="HTML",
                                     duration=duration,
                                     width=width,
                                     height=height,
@@ -138,7 +138,7 @@ class TgUploader:
                     #     try:
                     #         for x in AUTO_DUMP_CHAT:
                     #             app.send_audio(chat_id=x, audio=self.__sent_msg.audio.file_id, caption=cap_mono,
-                    #                            parse_mode="html", duration=duration, performer=artist, title=title,
+                    #                            parse_mode="HTML", duration=duration, performer=artist, title=title,
                     #                            width=width, height=height, thumb=thumb)
                     #     except Exception as err:
                     #         LOGGER.error(f"Failed sent to channel\n{err}")
@@ -153,7 +153,7 @@ class TgUploader:
                     #     try:
                     #         for x in AUTO_DUMP_CHAT:
                     #             app.send_photo(chat_id=x, photo=self.__sent_msg.photo.file_id, caption=cap_mono,
-                    #                            parse_mode="html")
+                    #                            parse_mode="HTML")
                     #     except Exception as err:
                     #         LOGGER.error(f"Failed sent to channel\n{err}")
                 else:
@@ -176,7 +176,7 @@ class TgUploader:
                 #     try:
                 #         for x in AUTO_DUMP_CHAT:
                 #             app.send_documents(chat_id=x, document=self.__sent_msg.document.file_id, caption=cap_mono,
-                #                                parse_mode="html", thumb=thumb)
+                #                                parse_mode="HTML", thumb=thumb)
                 #     except Exception as err:
                 #         LOGGER.error(f"Failed sent to channel\n{err}")
         except FloodWait as f:
